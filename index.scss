@@ -74,6 +74,13 @@ body {
 
     i {
       font-size: 28px;
+      transition: all 0.2s ease;
+    }
+
+    &:hover {
+      i {
+        padding-left: 5px;
+      }
     }
 
     a {
