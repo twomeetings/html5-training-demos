@@ -211,6 +211,46 @@ body {
       }
     }
   }
+
+  .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin: 30px 0px;
+    border-top: 1px dashed #AAA;
+    border-bottom: 1px dashed #AAA;
+
+    i {
+      font-size: 28px;
+      width: 30px;
+    }
+
+    .tip {
+      font-size: 12px;
+      width: 400px;
+    }
+
+    form {
+      width: 400px;
+      input[type="email"] {
+        width: 66%;
+        box-shadow: 1px 0px 0px 0px #AAA;
+      }
+      input[type="button"] {
+        width: 30%;
+        border-radius: 5px;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+        outline: none;
+        border: 1px solid;
+        border-color: #ddd #bbb #999;
+
+        &:active {
+          box-shadow: #4FB7A6 0 0 7px;
+        }
+      }
+    }
+  }
 }
 
 footer {
