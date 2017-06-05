@@ -48,11 +48,24 @@ module.exports = {
       },
       {
         test: /\.font\.js$/,
-        loaders: ['style-loader', 'css-loader', 'fontgen-loader?embed'],
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'fontgen-loader',
+            options: {
+              embed: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|eot|ttf|svg)$/,
-        loaders: ['url-loader', 'file-loader'],
+        use: ['url-loader', 'file-loader'],
       },
     ],
   },
