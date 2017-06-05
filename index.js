@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.scss';
 
 if (process.env.NODE_ENV !== 'production') {
@@ -9,14 +7,3 @@ if (process.env.NODE_ENV !== 'production') {
 /*
   import your component and replace <App />
 */
-
-function App() {
-  return (
-    <div>Hello Genius</div>
-  );
-}
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
