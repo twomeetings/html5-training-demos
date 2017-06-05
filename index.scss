@@ -40,6 +40,19 @@ body {
 
   ul {
     padding: 0;
+
+    li {
+      font-size: 18px;
+      color: #34AC98;
+      font-style: italic;
+      text-align: left;
+      line-height: 1.5em;
+      padding-left: 30px;
+
+      &:hover {
+        color: #EC6635;
+      }
+    }
   }
 }
 
