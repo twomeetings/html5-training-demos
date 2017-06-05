@@ -124,6 +124,71 @@ body {
   width: 900px;
   height: 1000px;
   border: 1px solid red;
+  overflow: hidden;
+  position: relative;
+
+  .slides {
+    position: relative;
+    top: 0;
+    height: 450px;
+    width: 400%;
+    transition: left 0.5s ease-in;
+
+    img {
+      float: left;
+      width: 25%;
+      height: 100%;
+    }
+  }
+
+  .gallery {
+    input[type="radio"] {
+      display: none;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        li {
+          flex-basis: 25%;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 60px;
+          line-height: 60px;
+          border-right: 1px solid #D3EDE9;
+
+          &:last-child {
+            border-radius: none;
+          }
+
+          label {
+            display: block;
+            background: #EFF8F7;
+            font-size: 18px;
+            color: #34AC98;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    #radio-1:checked ~ .slides {
+      left: 0;
+    }
+    #radio-2:checked ~ .slides {
+      left: -100%;
+    }
+    #radio-3:checked ~ .slides {
+      left: -200%;
+    }
+    #radio-4:checked ~ .slides {
+      left: -300%;
+    }
+  }
 }
 
 footer {
