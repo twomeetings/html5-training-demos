@@ -290,6 +290,46 @@ body {
 footer {
   height: 60px;
   border: 1px solid orange;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .left-link {
+    font-size: 0;
+    a {
+      display: inline-block;
+      padding: 0 3px;
+      color: #34AC98;
+      border-right: 1px solid #AAA;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 14px;
+
+      &:hover {
+        color: #EC6635;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .right-link {
+    font-size: 28px;
+
+    i {
+      color: #AAA;
+
+      &:hover {
+        color: #222;
+      }
+    }
+  }
 }
 
 [class^="icon"] {
