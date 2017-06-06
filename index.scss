@@ -161,6 +161,7 @@ body {
           height: 60px;
           line-height: 60px;
           border-right: 1px solid #D3EDE9;
+          transition: all 0.2s ease;
 
           &:last-child {
             border-radius: none;
@@ -233,6 +234,7 @@ body {
 
     form {
       width: 400px;
+      font-size: 14px;
       input[type="email"] {
         width: 66%;
         box-shadow: 1px 0px 0px 0px #AAA;
@@ -357,4 +359,46 @@ footer {
 [class^="icon"] {
   font-family: "iconfont";
   font-style: normal;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 1000px;
+  }
+
+  #content {
+    width: 720px;
+
+    .gallery {
+      .slides {
+        height: 360px; // keep height as 1/2 of witdh
+      }
+      nav {
+        ul {
+          li {
+            height: 30px;
+            line-height: 30px;
+
+            label {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      form {
+        width: 250px;
+      }
+    }
+
+    .blog {
+      article {
+        img {
+          height: 110px;
+        }
+      }
+    }
+  }
 }
