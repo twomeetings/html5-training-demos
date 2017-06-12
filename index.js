@@ -2,7 +2,7 @@ import './index.scss';
 
 (function () {
     const wrapDom = document.querySelector('#imageWrap');
-    const imageDom = document.querySelector('#imageViewer');
+    const canvas = document.querySelector('#canvas');
 
     // 保存图片
     const saveImage = (image) => {
@@ -17,7 +17,7 @@ import './index.scss';
     const loadHandler = function () {
         const image = getImage();
         if (image) {
-            imageDom.src = image;
+            // imageDom.src = image;
         }
     };
 
@@ -32,7 +32,7 @@ import './index.scss';
         }
         const reader = new FileReader();
         reader.onload = function () {
-            imageDom.src = this.result;
+            // imageDom.src = this.result;
             saveImage(this.result);
         };
         reader.readAsDataURL(file);
