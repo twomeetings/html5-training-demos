@@ -1,4 +1,2 @@
-import './index.css'
-
-const abc = 1
-console.log('abc:',abc)
+import './icon.font.js';
+import './index.scss';

@@ -5,18 +5,42 @@ module.exports = {
     app: path.resolve(__dirname, './index.js'),
   },
   output: {
-    filename: '[name].js'
+    filename: '[name].js',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        loaders: ['style-loader', 'css-loader','sass-loader']
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /icon\.font\.js$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'fontgen-loader',
+            options: {
+              embed: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|eot|ttf|svg)$/,
+        use: [
+          'url-loader',
+          'file-loader',
+        ],
       },
     ],
   },
