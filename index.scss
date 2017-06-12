@@ -1,0 +1,94 @@
+html, body, div, h1, h2, h3, h4, h5, ul, li, p, section,
+nav, footer, header, article {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  width: 160px;
+  height: 1000px;
+  text-align: center;
+
+
+  #logo {
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  #contacts {
+    h1 {
+      font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: left;
+      border-bottom: 1px dashed #AAA;
+      padding-bottom: 5px;
+    }
+
+    button {
+      border: 1px solid #AAA;
+      background: white;
+      color: #34AC98;
+      font-size: 11px;
+      height: 30px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: #EFF8F7;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      text-align: left;
+      font-style: italic;
+      font-size: 12px;
+
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+  }
+}
+
+#content {
+  width: 900px;
+  height: 1000px;
+
+  i {
+    font-size: 24px;
+  }
+}
+
+footer {
+  height: 60px;
+}
+
+
+@import './assets/iconfonts/style.css';
