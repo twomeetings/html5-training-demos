@@ -3,9 +3,10 @@ import './index.scss';
 (function () {
     const wrapDom = document.querySelector('#imageWrap');
     const canvas = document.querySelector('#canvas');
+    const downloadDom = document.querySelector('#download');
 
     // 绘制图片
-    const drawImage = (imageBase64) => {
+    const drawImage = (imageBase64, isFirstRender) => {
         const tempImageDom = document.createElement('img');
         tempImageDom.src = imageBase64;
         tempImageDom.onload = function () {
@@ -14,7 +15,21 @@ import './index.scss';
             setCanvasSize(width, height);
             const ctx = canvas.getContext("2d");
             ctx.drawImage(tempImageDom, 0, 0);
+            // 添加水印
+            ctx.font = '24px sans-serif';
+            ctx.globalCompositeOperation = 'lighter';
+            ctx.fillStyle = 'rgba(255,255,255,0.4)';
+            ctx.textAlign = 'left';
+            ctx.textBaseline = 'top';
+            ctx.fillText('Watermark', 0, 0);
+            setDownloadLink();
         };
+    };
+
+    // 设置下载链接
+    const setDownloadLink = () => {
+        downloadDom.href = canvas.toDataURL();
+        downloadDom.style.display = 'block'
     };
 
     // 设置容器尺寸
@@ -57,7 +72,6 @@ import './index.scss';
         }
         const reader = new FileReader();
         reader.onload = function () {
-            // imageDom.src = this.result;
             drawImage(this.result);
             saveImage(this.result);
         };
