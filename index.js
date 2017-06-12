@@ -4,6 +4,31 @@ import './index.scss';
     const wrapDom = document.querySelector('#imageWrap');
     const canvas = document.querySelector('#canvas');
 
+    // 绘制图片
+    const drawImage = (imageBase64) => {
+        const tempImageDom = document.createElement('img');
+        tempImageDom.src = imageBase64;
+        tempImageDom.onload = function () {
+            const { width, height } = tempImageDom;
+            setBoxSize(width, height);
+            setCanvasSize(width, height);
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(tempImageDom, 0, 0);
+        };
+    };
+
+    // 设置容器尺寸
+    const setBoxSize = (width, height) => {
+        wrapDom.style.width = `${width}px`;
+        wrapDom.style.height = `${height}px`;
+    };
+
+    // 设置canvas尺寸
+    const setCanvasSize = (width, height) => {
+        canvas.width = width;
+        canvas.height = height;
+    };
+
     // 保存图片
     const saveImage = (image) => {
         localStorage.setItem('myImage', image);
@@ -17,7 +42,7 @@ import './index.scss';
     const loadHandler = function () {
         const image = getImage();
         if (image) {
-            // imageDom.src = image;
+            drawImage(image)
         }
     };
 
@@ -33,6 +58,7 @@ import './index.scss';
         const reader = new FileReader();
         reader.onload = function () {
             // imageDom.src = this.result;
+            drawImage(this.result);
             saveImage(this.result);
         };
         reader.readAsDataURL(file);
