@@ -13,11 +13,6 @@
         margin-bottom: 20px;
     }
 
-    #download {
-        display: none;
-        color: #2070DC;
-    }
-
     #imageWrap {
         display: flex;
         width: 500px;
@@ -27,8 +22,10 @@
         justify-content: center;
         border: 1px dashed #778899;
 
-        #canvas {
+        #imageViewer {
             display: block;
+            max-width: 100%;
+            max-height: 100%;
         }
 
     }
