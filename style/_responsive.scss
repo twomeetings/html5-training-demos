@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+  body {
+    width: 1000px;
+  }
+
+  #content {
+    width: 720px;
+
+    .gallery {
+      .slides {
+        height: 360px; // keep height as 1/2 of witdh
+      }
+
+      nav {
+        ul {
+          li {
+            height: 30px;
+            line-height: 30px;
+
+            label {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      form {
+        width: 250px;
+      }
+    }
+
+    .blog {
+      article {
+        img {
+          height: 110px;
+        }
+      }
+    }
+  }
+}
