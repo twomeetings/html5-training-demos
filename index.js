@@ -4,11 +4,6 @@ import './index.scss';
     const wrapDom = document.querySelector('#imageWrap');
     const imageDom = document.querySelector('#imageViewer');
 
-    // 设置下载链接
-    const setDownloadLink = (link) => {
-        downloadDom.href = link;
-        downloadDom.style.display = 'block'
-    };
     // 拖拽事件回调
     const dropHandler = function (event) {
         event.preventDefault();
@@ -24,14 +19,18 @@ import './index.scss';
         };
         reader.readAsDataURL(file);
     };
+
     // 拖入事件回调
     const dragEnterHandler = function () {
         wrapDom.style.borderColor = 'rgb(36,216,19)';
     };
+
     // 绑定拖拽事件
     wrapDom.addEventListener('drop', dropHandler);
+
     // 绑定拖入事件
     wrapDom.addEventListener('dragenter', dragEnterHandler);
+
     // 清除浏览器默认行为
     wrapDom.addEventListener('dragover', (e) => {
         e.preventDefault();
