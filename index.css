@@ -1,7 +1,9 @@
-.test{
-	border:1px solid blue;
-
-	span {
-		border:1px solid red;
+#tableInfo{
+	th{
+		background-color: #eee;
+		border:1px solid #ccc;
+	}
+	td,th{
+		padding: 3px 20px;
 	}
 }
