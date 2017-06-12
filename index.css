@@ -1,7 +1,24 @@
-.test{
-	border:1px solid blue;
+div{
+	padding: 40px;
+	margin: 10px;
+}
 
-	span {
-		border:1px solid red;
+body > div{
+	width: 50%;
+	color: white;
+}
+
+#top{
+	background-color:#ccc;
+
+	div{
+		background-color: blue;
+	}
+}
+
+#bottom{
+	background-color: #ccc;
+	div {
+		background-color: green;
 	}
 }
