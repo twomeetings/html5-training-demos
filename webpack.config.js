@@ -5,22 +5,22 @@ module.exports = {
     app: path.resolve(__dirname, './index.js'),
   },
   output: {
-    filename: '[name].js'
+    filename: '[name].js',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        loaders: ['style-loader', 'css-loader','sass-loader']
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
-  devServer:{
-   disableHostCheck: true
- }
+  devServer: {
+    disableHostCheck: true,
+  },
 };

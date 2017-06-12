@@ -1,4 +1,2 @@
-import './index.css'
+import './index.scss';
 
-const abc = 1
-console.log('abc:',abc)
