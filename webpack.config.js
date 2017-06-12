@@ -1,20 +1,22 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, 'index.js'),
+    app: path.resolve(__dirname, './index.js'),
   },
-  plugins: [
-    new HTMLWebpackPlugin({
-      template: './index.html',
-    }),
-  ],
+  output: {
+    filename: '[name].js'
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader','sass-loader']
       },
     ],
   },
