@@ -134,6 +134,10 @@ body {
 
 
 	.gallery {
+		input[type="radio"] {
+      display: none;
+    }
+
 		nav {
       ul {
         display: flex;
@@ -148,13 +152,17 @@ body {
           height: 60px;
           line-height: 60px;
           border-right: 1px solid #D3EDE9;
-					background: #EFF8F7;
-					font-size: 18px;
-					color: #34AC98;
-					text-align: center;
 
-					&:last-child {
+          &:last-child {
             border-right: none;
+          }
+
+          label {
+            display: block;
+            background: #EFF8F7;
+            font-size: 18px;
+            color: #34AC98;
+            text-align: center;
           }
         }
       }
