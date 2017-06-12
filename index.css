@@ -1,7 +1,39 @@
-.test{
-	border:1px solid blue;
+div{
+	padding: 30px;
+	margin: 30px;
+}
 
-	span {
-		border:1px solid red;
+body > div{
+	width: 30%;
+	color: white;
+	background-color:#eee;
+	height:300px;
+	display: inline-block;
+	border:1px solid #ccc;
+}
+
+.normal{}
+.special{
+	border-radius: 10px;
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+
+/*#top{
+	background-color:#ccc;
+
+	div{
+		background-color: blue;
 	}
 }
+
+#bottom{
+	background-color: #ccc;
+	div {
+		background-color: green;
+	}
+}*/
