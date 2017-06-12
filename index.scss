@@ -34,6 +34,45 @@ body {
     }
   }
 
+  ul {
+    padding: 0;
+
+    li {
+      text-align: left;
+      line-height: 1.5em;
+      padding-left: 50px;
+      margin-bottom: 15px;
+      position: relative;
+
+      span {
+        font-size: 18px;
+        color: #34AC98;
+        font-style: italic;
+        transition: all 0.5s ease;
+      }
+
+      i {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 26px;
+        margin-right: 10px;
+        vertical-align: middle;
+        transition: all 0.2s ease-in;
+      }
+
+      &:hover {
+        span {
+          color: #EC6635;
+        }
+
+        i {
+          left: 20px;
+        }
+      }
+    }
+  }
+
   #contacts {
     h1 {
       font-size: 12px;
