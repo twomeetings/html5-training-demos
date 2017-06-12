@@ -1,0 +1,13 @@
+@mixin slide($dotClass, $left) {
+  #{$dotClass}:checked ~ .slides {
+    left: $left;
+  }
+}
+
+@mixin activeSlide($dotClass, $labelClass) {
+  #{$dotClass}:checked ~ nav {
+    #{$labelClass} {
+      background: #D9EFEC;
+    }
+  }
+}

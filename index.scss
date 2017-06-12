@@ -1,3 +1,5 @@
+@import './style/mixins';
+
 html, body, div, h1, h2, h3, h4, h5, ul, li, p, section,
 nav, footer, header, article {
   box-sizing: border-box;
@@ -119,15 +121,19 @@ body {
 #content {
   width: 900px;
   height: 1000px;
+  position: relative;
+	overflow: hidden;
 
 	.slides {
     position: relative;
     top: 0;
     height: 450px;
+    width: 400%;
+    transition: left 0.5s ease-in;
 
     img {
       float: left;
-      width: 100%;
+      width: 25%;
       height: 100%;
     }
   }
@@ -167,6 +173,16 @@ body {
         }
       }
     }
+		
+		@include slide('#radio-1', 0);
+    @include slide('#radio-2', -100%);
+    @include slide('#radio-3', -200%);
+    @include slide('#radio-4', -300%);
+
+    @include activeSlide('#radio-1', '#labelForRadio-1');
+    @include activeSlide('#radio-2', '#labelForRadio-2');
+    @include activeSlide('#radio-3', '#labelForRadio-3');
+    @include activeSlide('#radio-4', '#labelForRadio-4');
 	}
 }
 
