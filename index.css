@@ -17,9 +17,9 @@ button{
 		width: 0;
 		height: 0;
 		left:48%;
-		top:-10px;
+		top:100%;
 		border:none;
 		border: 5px solid transparent;
-		border-bottom:5px solid green;
+		border-top:5px solid green;
 	}
 }
