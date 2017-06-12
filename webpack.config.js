@@ -16,8 +16,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader','sass-loader']
+        loaders: ['style-loader', 'css-loader','sass-loader', 'postcss-loader']
       },
     ],
   },
+  devServer:{
+    disableHostCheck: true
+  }
 };
