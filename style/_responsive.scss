@@ -90,3 +90,57 @@
     }
   }
 }
+
+@media (max-width: 756px) {
+  body {
+    width: 520px;
+    padding: 20px;
+  }
+
+  #menu {
+    nav {
+      li {
+        width: auto;
+        padding-left: 10px;
+        i {
+          display: none;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #content {
+    width: 480px;
+
+    .gallery {
+      .slides {
+        height: 250px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    .subscribe {
+      flex-wrap: wrap;
+      form {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    .blog {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      article {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
