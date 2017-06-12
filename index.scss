@@ -225,6 +225,62 @@ body {
       }
     }
   }
+
+	.blog {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+
+		article {
+			flex-basis: 23%;
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					img {
+						opacity: 0.8;
+					}
+
+					h1 {
+						color: #EC6635;
+					}
+				}
+			}
+
+			h1 {
+				text-transform: capitalize;
+				font-size: 18px;
+				font-weight: normal;
+				color: #34AC98;
+			}
+
+			img {
+				width: 100%;
+				height: 130px;
+				padding: 10px;
+				border: 1px solid #AAA;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			.meta {
+				font-size: 16px;
+				color: #AAA;
+
+				a {
+					color: #34AC98;
+					border-bottom: 1px dashed #AAA;
+
+					&:hover {
+						color: #EC6635;
+					}
+				}
+			}
+		}
+	}
 }
 
 footer {
