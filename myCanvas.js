@@ -1,4 +1,4 @@
-console.log('mycanvans!')
+console.log('my canvans')
 
 let canvas = document.querySelector('#canvas')
 let ctx = canvas.getContext('2d')
