@@ -6,30 +6,6 @@ const wrapDom = document.querySelector('#imageWrap');
 const canvas = document.querySelector('#canvas');
 const downloadDom = document.querySelector('#download');
 
-// 绘制图片
-// const drawImage = (imageBase64, isFirstRender) => {
-//     const tempImageDom = document.createElement('img');
-//     tempImageDom.src = imageBase64;
-//     tempImageDom.onload = function () {
-//         const { width, height } = tempImageDom;
-//         setBoxSize(width, height);
-//         setCanvasSize(width, height);
-//         const ctx = canvas.getContext("2d");
-//         ctx.drawImage(tempImageDom, 0, 0);
-//         // 添加水印
-//         const gradient = ctx.createLinearGradient(0, 0, 150, 0);
-//         gradient.addColorStop('0', "rgba(0,0,0,0.5)");
-//         gradient.addColorStop('1.0', "rgba(225,225,225,0.5)");
-//         ctx.font = '24px sans-serif';
-//         ctx.globalCompositeOperation = 'lighter';
-//         ctx.fillStyle = gradient;
-//         ctx.textAlign = 'left';
-//         ctx.textBaseline = 'top';
-//         ctx.fillText('Watermark', 0, 0);
-//         setDownloadLink();
-//     };
-// };
-
 // 设置下载链接
 const setDownloadLink = (tempCanvas) => {
     downloadDom.href = tempCanvas.toDataURL();
