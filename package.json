@@ -34,16 +34,21 @@
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.2",
+    "file-loader": "^0.11.2",
+    "fontgen-loader": "^0.2.1",
     "html-webpack-plugin": "^2.24.1",
     "node-sass": "^3.10.1",
     "open-browser-webpack-plugin": "0.0.2",
+    "postcss-loader": "^2.0.5",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^3.0.0-beta.4",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.8",
     "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.10.2",
     "webpack-dev-server": "^2.4.5",
-    "webpack-hot-middleware": "^2.18.0"
+    "webpack-hot-middleware": "^2.18.0",
+    "ws": "^3.0.0"
   }
 }
