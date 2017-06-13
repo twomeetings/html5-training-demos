@@ -1,15 +1,14 @@
 import { saveImage, getImage } from './storageActions'
 import './index.scss';
 
-
 const wrapDom = document.querySelector('#imageWrap');
-const canvas = document.querySelector('#canvas');
+const imageDom = document.querySelector('#imageViewer');
 
 // 获取初始化数据
 const loadHandler = function () {
     const image = getImage();
     if (image) {
-        // todo render canvas
+        imageDom.src = image;
     }
 };
 
@@ -24,7 +23,7 @@ const dropHandler = function (event) {
     }
     const reader = new FileReader();
     reader.onload = function () {
-        // todo render canvas
+        imageDom.src = this.result;
         saveImage(this.result);
     };
     reader.readAsDataURL(file);
