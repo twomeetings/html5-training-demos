@@ -1,20 +1,16 @@
 {
-  "name": "react-demo-bolierplate",
+  "name": "html5-training-demos",
   "version": "1.0.1",
   "description": "a bolierplate for develop demo conveniently",
   "main": "index.jsx",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jkvim/react-demo-bolierplate.git"
+    "url": "git@github.com:twomeetings/html5-training-demos.git"
   },
   "scripts": {
     "start": "webpack-dev-server --hot --port 8080 --config webpack.config.js --host 0.0.0.0"
   },
-  "keywords": [
-    "react",
-    "bolierplate"
-  ],
-  "homepage": "https://github.com/jkvim/react-demo-bolierplate#readme",
+  "homepage": "https://github.com/twomeetings/html5-training-demos.git",
   "author": {
     "name": "jkvim",
     "email": "jkvim@outlook.com",
