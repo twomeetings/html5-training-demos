@@ -16,9 +16,12 @@ import './index.scss';
             const ctx = canvas.getContext("2d");
             ctx.drawImage(tempImageDom, 0, 0);
             // 添加水印
+            const gradient = ctx.createLinearGradient(0, 0, 150, 0);
+            gradient.addColorStop('0', "rgba(0,0,0,0.5)");
+            gradient.addColorStop('1.0', "rgba(225,225,225,0.5)");
             ctx.font = '24px sans-serif';
             ctx.globalCompositeOperation = 'lighter';
-            ctx.fillStyle = 'rgba(255,255,255,0.4)';
+            ctx.fillStyle = gradient;
             ctx.textAlign = 'left';
             ctx.textBaseline = 'top';
             ctx.fillText('Watermark', 0, 0);
