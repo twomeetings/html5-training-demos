@@ -5,6 +5,8 @@ import './index.scss';
 const wrapDom = document.querySelector('#imageWrap');
 const canvas = document.querySelector('#canvas');
 const downloadDom = document.querySelector('#download');
+canvas.width = 500;
+canvas.height = 350;
 
 // 设置下载链接
 const setDownloadLink = (tempCanvas) => {
