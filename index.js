@@ -1,4 +1,11 @@
-import './index.css'
+import './index.scss';
 
-const abc = 1
-console.log('abc:',abc)
+const all = document.getElementById('all');
+
+all.onchange = (event) => {
+  const checked = event.target.checked;
+  const list = document.querySelectorAll('ul li input[type="checkbox"]');
+  for (let i = 0; i < list.length; i++) {
+    list[i].checked = checked;
+  }
+};

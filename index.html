@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>HTML5 Training Demos</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <div class='test'>
-      <span>test</span>
-    </div>
-    <script src='./app.js'></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 Training Demos</title>
+</head>
+
+<body>
+  <h1>CSS Easing Function</h1>
+  <h4 class="owner"><a href="https://codepen.io/nxworld/details/zoLbdd/">By Naoya</a></h4>
+  <div class="allcheck">
+    <input type="checkbox" id="all"><label for="all">All Checked</label>
+  </div>
+
+  <ul>
+    <li>
+      <label for="ease">ease</label><input type="checkbox" id="ease">
+      <div class="ease"></div>
+    </li>
+    <li>
+      <label for="linear">linear</label><input type="checkbox" id="linear">
+      <div class="linear"></div>
+    </li>
+    <li>
+      <label for="easeIn">easeIn</label><input type="checkbox" id="easeIn">
+      <div class="easeIn"></div>
+    </li>
+    <li>
+      <label for="easeOut">easeOut</label><input type="checkbox" id="easeOut">
+      <div class="easeOut"></div>
+    </li>
+    <li>
+      <label for="easeInOut">easeInOut</label><input type="checkbox" id="easeInOut">
+      <div class="easeInOut"></div>
+    </li>
+
+    <li>
+      <label for="easeInSine">easeInSine</label><input type="checkbox" id="easeInSine">
+      <div class="easeInSine"></div>
+    </li>
+    <li>
+      <label for="easeOutSine">easeOutSine</label><input type="checkbox" id="easeOutSine">
+      <div class="easeOutSine"></div>
+    </li>
+    <li>
+      <label for="easeInOutSine">easeInOutSine</label><input type="checkbox" id="easeInOutSine">
+      <div class="easeInOutSine"></div>
+    </li>
+    <li>
+      <label for="easeInQuad">easeInQuad</label><input type="checkbox" id="easeInQuad">
+      <div class="easeInQuad"></div>
+    </li>
+    <li>
+      <label for="easeOutQuad">easeOutQuad</label><input type="checkbox" id="easeOutQuad">
+      <div class="easeOutQuad"></div>
+    </li>
+    <li>
+      <label for="easeInOutQuad">easeInOutQuad</label><input type="checkbox" id="easeInOutQuad">
+      <div class="easeInOutQuad"></div>
+    </li>
+
+    <li>
+      <label for="easeInCubic">easeInCubic</label><input type="checkbox" id="easeInCubic">
+      <div class="easeInCubic"></div>
+    </li>
+    <li>
+      <label for="easeOutCubic">easeOutCubic</label><input type="checkbox" id="easeOutCubic">
+      <div class="easeOutCubic"></div>
+    </li>
+    <li>
+      <label for="easeInOutCubic">easeInOutCubic</label><input type="checkbox" id="easeInOutCubic">
+      <div class="easeInOutCubic"></div>
+    </li>
+    <li>
+      <label for="easeInQuart">easeInQuart</label><input type="checkbox" id="easeInQuart">
+      <div class="easeInQuart"></div>
+    </li>
+    <li>
+      <label for="easeOutQuart">easeOutQuart</label><input type="checkbox" id="easeOutQuart">
+      <div class="easeOutQuart"></div>
+    </li>
+    <li>
+      <label for="easeInOutQuart">easeInOutQuart</label><input type="checkbox" id="easeInOutQuart">
+      <div class="easeInOutQuart"></div>
+    </li>
+
+    <li>
+      <label for="easeInQuint">easeInQuint</label><input type="checkbox" id="easeInQuint">
+      <div class="easeInQuint"></div>
+    </li>
+    <li>
+      <label for="easeOutQuint">easeOutQuint</label><input type="checkbox" id="easeOutQuint">
+      <div class="easeOutQuint"></div>
+    </li>
+    <li>
+      <label for="easeInOutQuint">easeInOutQuint</label><input type="checkbox" id="easeInOutQuint">
+      <div class="easeInOutQuint"></div>
+    </li>
+    <li>
+      <label for="easeInExpo">easeInExpo</label><input type="checkbox" id="easeInExpo">
+      <div class="easeInExpo"></div>
+    </li>
+    <li>
+      <label for="easeOutExpo">easeOutExpo</label><input type="checkbox" id="easeOutExpo">
+      <div class="easeOutExpo"></div>
+    </li>
+    <li>
+      <label for="easeInOutExpo">easeInOutExpo</label><input type="checkbox" id="easeInOutExpo">
+      <div class="easeInOutExpo"></div>
+    </li>
+
+    <li>
+      <label for="easeInCirc">easeInCirc</label><input type="checkbox" id="easeInCirc">
+      <div class="easeInCirc"></div>
+    </li>
+    <li>
+      <label for="easeOutCirc">easeOutSine</label><input type="checkbox" id="easeOutCirc">
+      <div class="easeOutCirc"></div>
+    </li>
+    <li>
+      <label for="easeInOutCirc">easeInOutCirc</label><input type="checkbox" id="easeInOutCirc">
+      <div class="easeInOutCirc"></div>
+    </li>
+    <li>
+      <label for="easeInBack">easeInBack</label><input type="checkbox" id="easeInBack">
+      <div class="easeInBack"></div>
+    </li>
+    <li>
+      <label for="easeOutBack">easeOutBack</label><input type="checkbox" id="easeOutBack">
+      <div class="easeOutBack"></div>
+    </li>
+    <li>
+      <label for="easeInOutBack">easeInOutBack</label><input type="checkbox" id="easeInOutBack">
+      <div class="easeInOutBack"></div>
+    </li>
+  </ul>
+  <script src='./app.js'></script>
+</body>
+
 </html>
