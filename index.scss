@@ -131,35 +131,6 @@ body {
       height: 100%;
     }
   }
-
-
-	.gallery {
-		nav {
-      ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-
-        li {
-          flex-basis: 25%;
-          padding: 0;
-          margin: 0;
-          width: 100%;
-          height: 60px;
-          line-height: 60px;
-          border-right: 1px solid #D3EDE9;
-					background: #EFF8F7;
-					font-size: 18px;
-					color: #34AC98;
-					text-align: center;
-
-					&:last-child {
-            border-right: none;
-          }
-        }
-      }
-    }
-	}
 }
 
 footer {
