@@ -22,6 +22,7 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
     "babel-core": "^6.14.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.5",
@@ -38,6 +39,7 @@
     "fontgen-loader": "^0.2.1",
     "html-webpack-plugin": "^2.24.1",
     "node-sass": "^3.10.1",
+    "normalize-scss": "^7.0.0",
     "open-browser-webpack-plugin": "0.0.2",
     "postcss-loader": "^2.0.5",
     "raw-loader": "^0.5.1",
